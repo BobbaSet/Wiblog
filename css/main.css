@@ -11,7 +11,13 @@ p, a, ul{
 
 h1, h2, h3{
     font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(109, 109, 177);
 }
+
+h2{
+   color: rgb(161, 118, 161);
+}
+
 
 a{
     text-decoration: none;
