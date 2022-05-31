@@ -88,14 +88,21 @@ header{
 .footer{
     margin-top: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .reseaux-footer{
     display: flex;
+    flex-direction: column-reverse;
     list-style: none;
 }
+
+#logo-footer{
+    width: 150px;
+    height: 150px;
+}
+
 .reseau-liste-footer{
     padding: 10px;
 }
