@@ -9,7 +9,7 @@ body{
 .navigation{
     display: flex;
     margin-top: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -30,7 +30,7 @@ body{
 /*--------------------------------------------------------- HEADER -----------------------------------------------*/
 
 header{
-    background-image: url(/img/header.jpg);
+    background-image: url(/img/header1.bmp);
     object-fit: cover;
     width: 1200px;
     height: 300px;
@@ -44,9 +44,49 @@ header{
     width: 500px;
 }
 
+/*--------------------------------------------------------- GRID -----------------------------------------------*/
+
+.grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1200px;
+    grid-gap: 30px;
+}
+
+.grid-template{
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.grid-template:hover{
+    box-shadow:  10px 5px 5px black;
+    transition:1s;
+}
+.article_grid{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.date{
+    margin: 0;
+    color: rgb(161, 118, 161);
+    padding: 2px;
+}
+
+.paragrid{
+    margin: 0;
+
+    width: 250px;
+    padding: 2px;
+}
+
 /*--------------------------------------------------------- FOOTER -----------------------------------------------*/
 
 .footer{
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
