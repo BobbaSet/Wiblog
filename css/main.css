@@ -72,17 +72,19 @@ header{
 /*--------------------------------------------------------- GRID -----------------------------------------------*/
 
 .grid{
-    margin-top: 50px;
+    padding-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 1200px;
     grid-gap: 30px;
+    width: 1100px;
+    margin: auto;
 }
 
 .grid-template{
-    width: 250px;
+    width: 270px;
     border: 1px solid black;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .grid-template:hover{
@@ -91,7 +93,7 @@ header{
 }
 .article_grid{
     object-fit: cover;
-    width: 250px;
+    width: 270px;
     height: 250px;
 }
 
@@ -121,12 +123,23 @@ textarea{
 .formulaire{
     margin: 0 auto;
     width: 320px;
-    background-color: grey;
+    background: linear-gradient(rgba(100,65,164,255), rgb(255, 255, 255));
     margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .form{
     padding: 10px;
+}
+
+.object{
+    padding: 5px;
+}
+
+textarea{
+    width: 250px;
+    height: 150px;
 }
 
 /*--------------------------------------------------------- FOOTER -----------------------------------------------*/
