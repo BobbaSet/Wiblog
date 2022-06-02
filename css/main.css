@@ -88,7 +88,7 @@ header{
 }
 
 .grid-template:hover{
-    box-shadow:  10px 5px 5px black;
+    box-shadow:  10px 5px 5px rgba(100,65,164,255);
     transition:1s;
 }
 .article_grid{
@@ -112,6 +112,8 @@ header{
 
 .article_propos{
     padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 textarea{
@@ -164,7 +166,7 @@ textarea{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 1px solid black;
+    border-top: 1px solid rgba(100,65,164,255);
 }
 
 .reseaux-footer{
