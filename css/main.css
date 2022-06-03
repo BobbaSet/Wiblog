@@ -1,67 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed&display=swap');
 
-body{
+body {
     width: 1200px;
     margin: 0 auto;
 }
 
-p, a, ul{
+p,
+a,
+ul {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(109, 109, 177);
 }
 
-h2{
-   color: rgb(161, 118, 161);
+h2 {
+    color: rgb(161, 118, 161);
 }
 
 
-a{
+a {
     text-decoration: none;
     color: rgb(161, 118, 161);
 }
 
-a:hover{
+a:hover {
     color: rgb(109, 109, 177);
 }
 
 
 /*--------------------------------------------------------- NAVIGATION -----------------------------------------------*/
 
-.navigation{
+.navigation {
     display: flex;
     margin-top: 10px;
     justify-content: space-between;
     align-items: center;
 }
 
-#logo{
+#logo {
     width: 70px;
     height: 80px;
 }
 
-.liste-nav{
+.liste-nav {
     display: flex;
     list-style: none;
 }
 
-.liste-sous-nav{
+.liste-sous-nav {
     padding: 10px;
 }
 
 /*--------------------------------------------------------- HEADER -----------------------------------------------*/
 
-header{
+header {
     background-image: url(../img/header1.bmp);
     object-fit: cover;
     width: 1200px;
     height: 300px;
 }
 
-.p-header{
+.p-header {
     color: white;
     padding-top: 90px;
     margin-left: 350px;
@@ -71,7 +75,7 @@ header{
 
 /*--------------------------------------------------------- GRID -----------------------------------------------*/
 
-.grid{
+.grid {
     padding-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -80,110 +84,224 @@ header{
     margin: auto;
 }
 
-.grid-template{
+.grid-template {
     width: 270px;
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.grid-template:hover{
-    box-shadow:  10px 5px 5px rgba(100,65,164,255);
-    transition:1s;
+.grid-template:hover {
+    box-shadow: 10px 5px 5px rgba(100, 65, 164, 255);
+    transition: 1s;
 }
-.article_grid{
+
+.article_grid {
     object-fit: cover;
     width: 270px;
     height: 250px;
 }
 
-.date{
+.date {
     margin: 0;
     color: rgb(161, 118, 161);
     padding: 2px;
 }
 
-.paragrid{
+.paragrid {
     margin: 0;
 
     width: 250px;
     padding: 2px;
 }
 
-.article_propos{
+.article_propos {
     padding: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-textarea{
+textarea {
     resize: none;
 }
 
 /*--------------------------------------------------------- FORMULAIRE -----------------------------------------------*/
 
-.formulaire{
+.formulaire {
     margin: 0 auto;
     width: 320px;
-    background: linear-gradient(rgba(100,65,164,255), rgb(255, 255, 255));
+    background: linear-gradient(rgba(100, 65, 164, 255), rgb(255, 255, 255));
     margin-top: 50px;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-.form{
+.form {
     padding: 10px;
 }
 
-.object{
+.object {
     padding: 5px;
 }
 
-textarea{
+textarea {
     width: 250px;
     height: 150px;
 }
 
 /*--------------------------------------------------------- ARTICLE -----------------------------------------------*/
 
-.game{
+.game {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.gaming{
+
+.gaming {
     width: 1000px;
-    
+
 }
 
-.para_gaming{
+.para_gaming {
     width: 1000px;
 }
 
 /*--------------------------------------------------------- FOOTER -----------------------------------------------*/
 
-.footer{
+.footer {
     margin-top: 70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 1px solid rgba(100,65,164,255);
+    border-top: 1px solid rgba(100, 65, 164, 255);
 }
 
-.reseaux-footer{
+.reseaux-footer {
     display: flex;
     flex-direction: column-reverse;
     list-style: none;
 }
 
-#logo-footer{
+#logo-footer {
     width: 150px;
-    height: 150px;
+    height: 170px;
 }
 
-.reseau-liste-footer{
+.reseau-liste-footer {
     padding: 10px;
 }
-.reseau{
+
+.reseau {
     width: 50px;
     height: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+
+    body {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    /*--------------------------------------------------------- HEADER -----------------------------------------------*/
+
+    header {
+        background-image: url(../img/header1.bmp);
+        object-fit: cover;
+        width: auto;
+        height: 300px;
+    }
+
+    .p-header {
+        color: white;
+        padding-top: 50px;
+        margin-left: 10px;
+        text-align: center;
+        width: auto;
+    }
+
+    /*--------------------------------------------------------- GRID -----------------------------------------------*/
+
+    .grid {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        width: auto;
+    }
+
+    .grid-template {
+        width: 300px;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    .grid-template:hover {
+        box-shadow: 10px 5px 5px rgba(100, 65, 164, 255);
+        transition: 1s;
+    }
+
+    .article_grid {
+        object-fit: cover;
+        width: 300px;
+        height: 250px;
+    }
+
+    .date {
+        margin: 0;
+        font-size: 16px;
+        color: rgb(161, 118, 161);
+        padding: 2px;
+        padding-bottom: 2px;
+    }
+
+    .paragrid {
+        margin: 0;
+        font-size: 18px;
+        width: 280px;
+        padding: 2px;
+    }
+
+    .article_propos {
+        padding: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    /*--------------------------------------------------------- FOOTER -----------------------------------------------*/
+
+    .footer {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid rgba(100, 65, 164, 255);
+    }
+
+    .reseaux-footer {
+        display: flex;
+        flex-direction: column-reverse;
+        list-style: none;
+    }
+
+    #logo-footer {
+        margin-top: 10px;
+        width: 150px;
+        height: 170px;
+    }
+
+    .reseau-liste-footer {
+        padding: 10px;
+    }
+
+    .reseau {
+        width: 50px;
+        height: 50px;
+    }
 }
