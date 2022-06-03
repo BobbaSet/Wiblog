@@ -195,6 +195,141 @@ textarea {
     height: 50px;
 }
 
+@media (min-width: 500px) and (max-width: 1000px) {
+    body {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    /*--------------------------------------------------------- NAVIGATION -----------------------------------------------*/
+
+.navigation {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+
+#logo {
+    width: 70px;
+    height: 80px;
+}
+
+.liste-nav {
+    display: flex;
+    list-style: none;
+}
+
+.liste-sous-nav {
+    padding: 10px;
+}
+
+        /*--------------------------------------------------------- HEADER -----------------------------------------------*/
+
+        header {
+            background-image: url(../img/header1.bmp);
+            object-fit: cover;
+            width: 1000px;
+            height: 300px;
+        }
+    
+        .p-header {
+            color: white;
+            padding-top: 80px;
+            margin-left: 260px;
+            text-align: center;
+            width: 500px;
+        }
+    
+
+    /*--------------------------------------------------------- GRID -----------------------------------------------*/
+
+    .grid {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        width: 1000px;
+        margin: auto;
+    }
+
+    .grid-template {
+        width: 270px;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    .grid-template:hover {
+        box-shadow: 10px 5px 5px rgba(100, 65, 164, 255);
+        transition: 1s;
+    }
+
+    .article_grid {
+        object-fit: cover;
+        width: 270px;
+        height: 250px;
+    }
+
+    .date {
+        margin: 0;
+        font-size: 16px;
+        color: rgb(161, 118, 161);
+        padding: 2px;
+    }
+
+    .paragrid {
+        margin: 0;
+        font-size: 18px;
+        width: 250px;
+        padding: 2px;
+    }
+
+    .article_propos {
+        padding: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+     /*--------------------------------------------------------- FOOTER -----------------------------------------------*/
+
+     .footer {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 1000px;
+        border-top: 1px solid rgba(100, 65, 164, 255);
+    }
+
+    .reseaux-footer {
+        display: flex;
+        flex-direction: column-reverse;
+        list-style: none;
+    }
+
+    #logo-footer {
+        margin-top: 10px;
+        width: 150px;
+        height: 170px;
+    }
+
+    .reseau-liste-footer {
+        padding: 10px;
+    }
+
+    .reseau {
+        width: 50px;
+        height: 50px;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 500px) {
 
     body {
